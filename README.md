@@ -1,0 +1,3 @@
+# Hot Reload on Android
+
+This is a demo of hot reloading using BroadcastReceivers explained in [this](https://medium.com/@gpeal/reliable-hot-reload-on-android-27f14a80df60) Medium article. The most important class is [MainActivity](https://github.com/gpeal/Android-Hot-Reload/blob/master/app/src/main/java/com/gpeal/hotreload/MainActivity.kt) as it contains the broadcast receiver that can be invoked while the app is running.
