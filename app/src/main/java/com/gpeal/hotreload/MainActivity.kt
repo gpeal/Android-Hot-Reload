@@ -42,7 +42,7 @@ adb shell am broadcast -a debug --es text "Hello\ World\!"
             }
 
             if (intent.hasExtra("color")) {
-                val (r, g, b) = intent.getStringExtra("color").split(',').map { it.toInt() }
+                val (r, g, b) = intent.getStringExtra("color").split(',').map(String::toInt)
                 rectangleView.background = ColorDrawable(Color.argb(255, r, g, b))
             }
 
